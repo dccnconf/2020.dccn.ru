@@ -22,5 +22,8 @@
     "gulp-util": "^3.0.8",
     "postcss": "^7.0.25",
     "tailwindcss": "^1.1.4"
+  },
+  "resolutions": {
+      "lodash.template": "^4.5.0"
   }
 }
