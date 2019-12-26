@@ -1,0 +1,18 @@
+language: node_js
+
+node_js:
+    - node
+
+before_script:
+    - npm install -g gulp-cli
+    - curl https://rclone.org/install.sh | bash
+
+script:
+    - gulp build --production
+
+deploy:
+    provider: script
+    script: rclone --config rclone.conf --swift-user $OS_USERNAME --swift-key $OS_PASSWORD sync dist selectel:2020.dccn.ru
+    on:
+        branch: master
+

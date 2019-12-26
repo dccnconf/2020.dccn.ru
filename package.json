@@ -1,0 +1,26 @@
+{
+  "name": "2020.dccn.ru",
+  "version": "1.0.0",
+  "description": "Static site for DCCN-2020 conference",
+  "main": "src/index.html",
+  "repository": "https://github.com/dccnconf/2020.dccn.ru.git",
+  "author": "Andrey Larionov <larioandr@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "@fullhuman/postcss-purgecss": "^1.3.0",
+    "autoprefixer": "^9.7.3",
+    "browser-sync": "^2.26.7",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8",
+    "postcss": "^7.0.25",
+    "tailwindcss": "^1.1.4"
+  }
+}
