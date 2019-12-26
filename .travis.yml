@@ -5,7 +5,7 @@ node_js:
 
 before_script:
     - npm install -g gulp-cli
-    - curl https://rclone.org/install.sh | bash
+    - curl https://rclone.org/install.sh | sudo bash
 
 script:
     - gulp build --production
