@@ -25,7 +25,8 @@ const paths = {
   css: `${config.root.src}/**/*.css`,
   html: `${config.root.src}/**/*.html`,
   js: `${config.root.src}/**/*.js`,
-  images: `${config.root.src}/images/**`
+  images: `${config.root.src}/images/**`,
+  data: `${config.root.src}/data/**`
 };
 
 /////////////////////////////////////////////////////////////////////////////
@@ -77,10 +78,16 @@ const build = {
     return gulp.src(paths.images)
       .pipe(gulp.dest(paths.dest + '/images'))
       .pipe(browserSync.stream());
+  },
+
+  data: function () {
+    return gulp.src(paths.data)
+      .pipe(gulp.dest(paths.dest + '/data'))
+      .pipe(browserSync.stream());
   }
 };
 
-const buildAll = gulp.parallel(build.css, build.html, build.js, build.images);
+const buildAll = gulp.parallel(build.css, build.html, build.js, build.images, build.data);
 
 const serve = function () {
   browserSync.init({ server: config.root.dest });
@@ -88,6 +95,7 @@ const serve = function () {
   gulp.watch(paths.js, build.js);
   gulp.watch(paths.html, build.html);
   gulp.watch(paths.images, build.images);
+  gulp.watch(paths.data, build.data);
 };
 
 const clear = function (callback) {

@@ -3,6 +3,10 @@
 @tailwind components;
 /* purgecss end ignore */
 
+html {
+    scroll-behavior: smooth;
+}
+
 .text-proxima-condensed {
   font-family: proxima-nova-condensed, sans-serif;
   font-weight: 400;
