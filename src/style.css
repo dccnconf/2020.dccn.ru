@@ -3,4 +3,63 @@
 @tailwind components;
 /* purgecss end ignore */
 
+.text-proxima-condensed {
+  font-family: proxima-nova-condensed, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-franklin {
+  font-family: franklin-gothic-urw, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.text-franklin-cond {
+  font-family: franklin-gothic-urw-cond, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/********************************************************/
+/* TIMELINE
+/* Inspired by: https://codepen.io/z-/pen/bwPBjY */
+/********************************************************/
+.timeline-container {
+  max-width: 50%;
+  padding-left: 50px;
+}
+.timeline-container {
+  position: relative;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  min-width: 4px;
+  background-color: #000;
+}
+/* .timeline .deadline {
+} */
+.timeline .deadline .date {
+  position: relative;
+  @apply text-gray-700 text-xl font-light;
+}
+.timeline .deadline .date::before {
+  content: '';
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  border: 3px solid #000;
+  background-color: #B794F4;
+  border-radius: 100%;
+  top: 50%;
+  left: -65px;
+}
+.timeline .deadline .comment {
+  @apply text-gray-600;
+}
+
 @tailwind utilities;

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DCCN'2020</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yma7zzy.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- ***************** NAVIGATION ******************** -->
+  <nav class="flex items-center justify-center flex-wrap bg-black py-1" id="top">
+    <a class="mr-4 ml-3 lg:ml-0" href="#top">
+      <!-- <img class="fill-current h-8 w-8 mr-2" width="54" height="54" src="images/dccn-logo.png"> -->
+      <span class="font-semibold text-proxima-condensed text-lg text-gray-400 tracking-tight">DCCN</span>
+    </a>
+    <div class="block lg:hidden ml-auto mr-3">
+      <button class="flex items-center px-2 py-1 border rounded text-gray-400 border-gray-500 hover:text-white hover:border-white self-end" onclick="toggleCollapsingNav()">
+        <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="block hidden w-full lg:flex lg:items-center lg:w-auto" id="#navCollapsingMenu">
+      <div class="text-sm lg:flex-grow">
+        <a href="#section-about" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
+          About
+        </a>
+        <a href="#section-cfp" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
+          CFP
+        </a>
+        <a href="#section-proceedings" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
+          Proceedings
+        </a>
+        <a href="#section-org" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
+          Organizers
+        </a>
+        <a href="#section-contact" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
+          Contact
+        </a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ******************** HERO *********************** -->
+  <div class="bg-black">
+    <div class="opacity-100 bg-cover md:bg-contain bg-local bg-no-repeat pt-10 md-10 pb-10 md:pt-20 md:pb-20" 
+         style="background-image: url('images/hero-bg-1.jpg');">
+      <div class="container mx-auto px-6 md:mt-12">
+        <div class="flex items-center mb-10">
+          <div class="pr-0 md:mx-auto md:max-w-xl">
+            <p class="text-2xl font-light text-gray-400 text-proxima-condensed">
+              23th International Conference on
+            </p>
+            <h1 class="text-4xl font-semibold text-gray-100 text-proxima-condensed">
+              Distributed Computer and Communication Networks:
+            </h1>
+            <p class="text-2xl font-light text-gray-400 text-proxima-condensed">Control, Computation, Communications</p>
+            <p class="mt-12 text-proxima-condensed text-2xl font-semibold text-gray-100">
+              7-13 September 2020<br>Moscow, Russia
+            </p>
+            <button class="bg-indigo-700 hover:bg-indigo-800 text-white text-lg font-semibold py-2 px-4 rounded-lg text-proxima-condensed mt-12">
+              Submit your paper
+            </button>
+          </div>
+          <img class="hidden md:block" src="images/dccn-logo.png" alt="DCCN logo" style="max-width: 220px;">
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- ******************** ABOUT ********************** -->
+  <section class="bg-indigo-100" id="section-about">
+    <div class="container mx-auto md:flex justify-center items-center py-20 text-franklin px-4">
+      <div class="text-block text-lg md:max-w-md mr-20 text-center md:text-left">
+        <p>
+        The purpose of the conference is to unite the efforts of Russian and foreign researchers from various academic and research organizations to develop, exchange and summarize the accumulated experience in the field of theory and practice of building computer and telecommunication networks, discuss development prospects and cooperation in this field.
+        </p>
+        <p class="mt-12">
+          The DCCN 2020 conference will continue a series of conferences on this subject, which have been held in Russia, Bulgaria and Israel in the last 22 years.
+        </p>
+      </div>
+      <div class="timeline-container pb-4 mx-auto mt-12 md:mx-0 ">
+        <div class="timeline">
+          <div class="deadline py-4">
+            <p class="date">1 February 2020</p>
+            <p class="comment">Start of papers submission</p>
+          </div>
+          <div class="deadline py-4">
+            <p class="date">1 April 2020</p>
+            <p class="comment">Start of peer review</p>
+          </div>
+          <div class="deadline pt-0 pb-8">
+            <p class="date">1 May 2020</p>
+            <p class="comment">Notification of acceptance</p>
+          </div>
+          <div class="deadline pt-8">
+            <p class="date">1 September 2020</p>
+            <p class="comment">Conference @Moscow</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ********************* CFP *********************** -->
+  <section class="bg-white" id="section-cfp">
+    <div class="container mx-auto py-20 text-franklin px-4">
+      <h2 class="text-franklin-cond text-4xl mb-12 text-center">Call for Papers</h2>
+      <p class="text-lg">
+        Authors are encouraged to submit their papers (6-8 pages) in Russian or English language via the online registration system website (will be available at <span class="text-indigo-700">1 February 2020</span>). The accepted papers will be published in the Conference Proceedings volume (included into the Russian Science Citation Index) prior to the beginning of the Conference.
+      </p>
+      <p class="text-lg mt-8">
+        After a peer review and plagiarism check, authors of selected submissions in English, recommended by the Program Committee, will be invited to submit their extended papers (12-15 pages in Springer LNCS template). After a second round of review the accepted extended papers will be published by Springer (approve pending) as a stand-alone volume of selected extended papers (indexed in Scopus and Web of Science).
+      </p>
+      <p class="text-lg mt-8">
+        Topics include, but are not limited to the following fields:
+      </p>
+      <ul class="list-inside text-lg pl-2 mt-4" style="list-style-type: '-  ';">
+        <li>Communication networks algorithms and protocols</li>
+        <li>Wireless and mobile networks</li>
+        <li>Computer and telecommunication networks control and management</li>
+        <li>Performance analysis, QoS/QoE evaluation and network efficiency</li>
+        <li>Analytical modeling and simulation of communication systems</li>
+        <li>Evolution of wireless networks toward 5G</li>
+        <li>Centimeter- and millimeter-wave radio technologies</li>
+        <li>RFID-technologies and their applications</li>
+        <li>Internet of Things and Fog Computing</li>
+        <li>Cloud computing, distributed and parallel systems</li>
+        <li>Big data</li>
+        <li>Probabilistic and statistical models in information systems</li>
+        <li>Queuing theory and reliability theory applications</li>
+        <li>High-altitude telecommunications platforms</li>
+      </ul>
+    </div>
+  </section>
+
+
+
+  <!-- ****************** PROCEEDINGS ****************** -->
+  <section class="bg-indigo-100" id="section-proceedings">
+    <div class="container mx-auto py-20 text-franklin">
+      <h2 class="text-franklin-cond text-4xl mb-12 text-center">Proceedings</h2>
+
+    </div>
+  </section>
+
+
+  <!-- ******************* ORGANIZERS  ***************** -->
+  <section class="bg-white" id="section-org">
+    <div class="container mx-auto py-20 text-franklin">
+      <h2 class="text-franklin-cond text-4xl mb-12 text-center">Organizers and Sponsors</h2>
+
+    </div>
+  </section>
+
+
+  <!-- ******************* CONTACT ********************* -->
+  <section class="bg-indigo-100" id="section-contact">
+    <div class="container mx-auto py-20 text-franklin">
+      <h2 class="text-franklin-cond text-4xl mb-12 text-center">Contact Us</h2>
+      <div class="flex flex-col md:flex-row items-center md:items-start">
+        <div class="w-1/2 mr-8">
+          <p class="text-franklin text-lg text-center md:text-right mt-8 max-w-sm ml-auto">If you have any questions, please  write us at <a class="text-indigo-700" href="mailto:org@dccn.ru">org@dccn.ru</a></p>
+        </div>
+        <div class="w-1/2 ml-12 order-first md:order-last">
+          <img src="images/undraw_envelope_n8lc.svg" alt="" style="max-width: 160px;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-gray-800 py-8 text-proxima-condensed">
+    <p class="text-center text-gray-400">DCCN'2020 All rights reserved</p>
+    <p class="mt-8 text-center text-gray-500 text-sm">Designed and developed by Andrey Larionov</p>
+  </footer>
+</body>
+<script src='script.js'></script>
+</html>

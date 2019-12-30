@@ -1,0 +1,1 @@
+{"version":3,"sources":["script.js"],"names":["toggleCollapsingNav","document","getElementById"],"mappings":"aACA,IAAMA,oBAAsB,WAD5BC,SAAAC,eAAA,sBACMF,UAAAA,OAAmB","file":"script.js","sourcesContent":["// \nconst toggleCollapsingNav = function () {\n  const menu = document.getElementById('#navCollapsingMenu');\n  menu.classList.toggle('hidden');\n};\n"]}
