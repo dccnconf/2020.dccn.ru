@@ -1,2 +1,2 @@
-"use strict";var toggleCollapsingNav=function(){document.getElementById("#navCollapsingMenu").classList.toggle("hidden")};
+"use strict";var toggleCollapsingNav=function(){document.getElementById("navCollapsingMenu").classList.toggle("hidden")},collapseNav=function(){var n=document.getElementById("navCollapsingMenu").classList;n.contains("hidden")||n.add("hidden")},handleNavClick=function(n){var e=n.target;console.log("click at ",e),(e.classList.contains("menu-item")||e.parentElement.classList.contains("menu-item"))&&collapseNav()};document.addEventListener("DOMContentLoaded",function(){document.getElementById("navbar").addEventListener("click",handleNavClick)});
 //# sourceMappingURL=script.js.map

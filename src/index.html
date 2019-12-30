@@ -10,8 +10,8 @@
 </head>
 <body>
   <!-- ***************** NAVIGATION ******************** -->
-  <nav class="flex items-center justify-center flex-wrap bg-black py-1" id="top">
-    <a class="mr-4 ml-3 lg:ml-0" href="#top">
+  <nav class="flex items-center justify-center flex-wrap bg-black py-1 sticky top-0 z-10" id="navbar">
+    <a class="mr-4 ml-3 lg:ml-0 menu-item" href="#hero">
       <!-- <img class="fill-current h-8 w-8 mr-2" width="54" height="54" src="images/dccn-logo.png"> -->
       <span class="font-semibold text-proxima-condensed text-lg text-gray-400 tracking-tight">DCCN</span>
     </a>
@@ -23,30 +23,41 @@
         </svg>
       </button>
     </div>
-    <div class="block hidden w-full lg:flex lg:items-center lg:w-auto" id="#navCollapsingMenu">
-      <div class="text-sm lg:flex-grow">
-        <a href="#section-about" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
-          About
-        </a>
-        <a href="#section-cfp" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
-          CFP
-        </a>
-        <a href="#section-proceedings" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
-          Proceedings
-        </a>
-        <a href="#section-org" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
-          Organizers
-        </a>
-        <a href="#section-contact" class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 text-gray-400 hover:text-white ml-2 mr-4 text-proxima-condensed text-lg">
-          Contact
-        </a>
-      </div>
+    <div class="block hidden w-full lg:flex lg:items-center lg:w-auto top-nav" id="navCollapsingMenu">
+      <ul class="text-sm lg:flex-grow">
+        <li class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 ml-2 mr-4 menu-item">
+          <a href="#section-about" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            About
+          </a>
+        </li>
+        <li class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 ml-2 mr-4 menu-item">
+          <a href="#section-cfp" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            CFP
+          </a>
+        </li>
+        <!-- <li class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 ml-2 mr-4 menu-item">
+          <a href="#section-proceedings" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            Proceedings
+          </a>
+        </li>
+        <li class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 ml-2 mr-4 menu-item">
+          <a href="#section-org" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            Organizers
+          </a>
+        </li> -->
+        <li class="block mt-3 mb-2 lg:inline-block lg:mt-0 lg:mb-0 ml-2 mr-4 menu-item">
+          <a href="#section-contact" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            Contact
+          </a>
+        </li>
+      </ul>
+
     </div>
   </nav>
 
 
   <!-- ******************** HERO *********************** -->
-  <div class="bg-black">
+  <div class="bg-black" id="hero">
     <div class="opacity-100 bg-cover md:bg-contain bg-local bg-no-repeat pt-10 md-10 pb-10 md:pt-20 md:pb-20" 
          style="background-image: url('images/hero-bg-1.jpg');">
       <div class="container mx-auto px-6 md:mt-12">
@@ -60,7 +71,7 @@
             </h1>
             <p class="text-2xl font-light text-gray-400 text-proxima-condensed">Control, Computation, Communications</p>
             <p class="mt-12 text-proxima-condensed text-2xl font-semibold text-gray-100">
-              7-13 September 2020<br>Moscow, Russia
+              14-18 September 2020<br>Moscow, Russia
             </p>
             <button class="bg-indigo-700 hover:bg-indigo-800 text-white text-lg font-semibold py-2 px-4 rounded-lg text-proxima-condensed mt-12">
               Submit your paper
@@ -88,19 +99,23 @@
       <div class="timeline-container pb-4 mx-auto mt-12 md:mx-0 ">
         <div class="timeline">
           <div class="deadline py-4">
-            <p class="date">1 February 2020</p>
+            <p class="date">15 February 2020</p>
             <p class="comment">Start of papers submission</p>
           </div>
           <div class="deadline py-4">
-            <p class="date">1 April 2020</p>
+            <p class="date">15 April 2020</p>
             <p class="comment">Start of peer review</p>
           </div>
-          <div class="deadline pt-0 pb-8">
-            <p class="date">1 May 2020</p>
+          <div class="deadline py-2">
+            <p class="date">15 May 2020</p>
             <p class="comment">Notification of acceptance</p>
           </div>
-          <div class="deadline pt-8">
-            <p class="date">1 September 2020</p>
+          <div class="deadline pt-2 pb-4">
+            <p class="date">15 June 2020</p>
+            <p class="comment">Camera-read submission</p>
+          </div>
+          <div class="deadline pt-4">
+            <p class="date">14 September 2020</p>
             <p class="comment">Conference @Moscow</p>
           </div>
         </div>
@@ -121,7 +136,7 @@
       <p class="text-lg mt-8">
         Topics include, but are not limited to the following fields:
       </p>
-      <ul class="list-inside text-lg pl-2 mt-4" style="list-style-type: '-  ';">
+      <ul class="list-inside text-lg pl-2 mt-4 list-disc">
         <li>Communication networks algorithms and protocols</li>
         <li>Wireless and mobile networks</li>
         <li>Computer and telecommunication networks control and management</li>
@@ -143,21 +158,32 @@
 
 
   <!-- ****************** PROCEEDINGS ****************** -->
-  <section class="bg-indigo-100" id="section-proceedings">
+  <!-- <section class="bg-indigo-100" id="section-proceedings">
     <div class="container mx-auto py-20 text-franklin">
       <h2 class="text-franklin-cond text-4xl mb-12 text-center">Proceedings</h2>
 
     </div>
-  </section>
+  </section> -->
 
 
   <!-- ******************* ORGANIZERS  ***************** -->
-  <section class="bg-white" id="section-org">
+  <!-- <section class="bg-white" id="section-org">
     <div class="container mx-auto py-20 text-franklin">
       <h2 class="text-franklin-cond text-4xl mb-12 text-center">Organizers and Sponsors</h2>
-
+      <div class="container flex px-4">
+        <div class="w-1/2 flex mx-4">
+          <a href="https://www.ipu.ru/en" target="blank" class="block mr-3 w-1/3">
+            <img src="images/ipu-ras-logo.svg" alt="" style="width: 96px;">
+          </a>
+          <div class="hidden md:block">
+            <a href="#" class="text-franklin text">
+              V.A. Trapeznikov Institute of Control Sciences of Russian Academy of Sciences
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- ******************* CONTACT ********************* -->
