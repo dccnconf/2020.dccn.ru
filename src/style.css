@@ -1,6 +1,7 @@
 /* purgecss start ignore */
 @tailwind base;
 @tailwind components;
+
 /* purgecss end ignore */
 
 html {
@@ -68,5 +69,12 @@ html {
 .timeline .deadline .comment {
   @apply text-gray-600;
 }
+/*
+TPC
+*/
+.tpc-member-name {@apply text-base;}
+.tpc-member-chair {@apply text-sm text-gray-700 font-bold;}
+.tpc-member-work {@apply text-sm text-gray-600 mt-1;}
+.tpc-member-country {@apply text-sm text-gray-600 font-medium;}
 
 @tailwind utilities;

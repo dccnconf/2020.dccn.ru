@@ -1,2 +1,26 @@
-"use strict";var toggleCollapsingNav=function(){document.getElementById("navCollapsingMenu").classList.toggle("hidden")},collapseNav=function(){var n=document.getElementById("navCollapsingMenu").classList;n.contains("hidden")||n.add("hidden")},handleNavClick=function(n){var e=n.target;console.log("click at ",e),(e.classList.contains("menu-item")||e.parentElement.classList.contains("menu-item"))&&collapseNav()};document.addEventListener("DOMContentLoaded",function(){document.getElementById("navbar").addEventListener("click",handleNavClick)});
+"use strict";
+
+// 
+var toggleCollapsingNav = function toggleCollapsingNav() {
+  var menu = document.getElementById('navCollapsingMenu');
+  menu.classList.toggle('hidden');
+};
+
+var collapseNav = function collapseNav() {
+  var cl = document.getElementById('navCollapsingMenu').classList;
+  if (!cl.contains('hidden')) cl.add('hidden');
+};
+
+var handleNavClick = function handleNavClick(event) {
+  var target = event.target;
+  console.log('click at ', target);
+
+  if (target.classList.contains('menu-item') || target.parentElement.classList.contains('menu-item')) {
+    collapseNav();
+  }
+};
+
+document.addEventListener('DOMContentLoaded', function () {
+  document.getElementById('navbar').addEventListener('click', handleNavClick);
+});
 //# sourceMappingURL=script.js.map

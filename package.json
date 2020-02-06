@@ -24,6 +24,6 @@
     "tailwindcss": "^1.1.4"
   },
   "resolutions": {
-      "lodash.template": "^4.5.0"
+    "lodash.template": "^4.5.0"
   }
 }
