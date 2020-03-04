@@ -2,3 +2,4 @@
 /_/
 *.log
 private.env
+package-lock.json
