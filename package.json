@@ -21,7 +21,8 @@
     "gulp-uglify": "^3.0.2",
     "gulp-util": "^3.0.8",
     "postcss": "^7.0.27",
-    "tailwindcss": "^1.2.0"
+    "tailwindcss": "^1.2.0",
+    "@babel/compat-data": "7.9.0"
   },
   "resolutions": {
     "lodash.template": "^4.5.0"
