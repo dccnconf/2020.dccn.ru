@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DCCN'2020</title>
+  <link rel="stylesheet" href="https://use.typekit.net/yma7zzy.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+</head>
+<body>
+  <!-- ***************** NAVIGATION ******************** -->
+  <nav class="flex items-center justify-center flex-wrap bg-black py-1 sticky top-0 z-10" id="navbar">
+    <a class="mr-4 ml-3 md:ml-0 menu-item" href="/index.html#hero">
+      <!-- <img class="fill-current h-8 w-8 mr-2" width="54" height="54" src="images/dccn-logo.png"> -->
+      <span class="font-semibold text-proxima-condensed text-lg text-gray-400 tracking-tight">DCCN</span>
+    </a>
+    <div class="block md:hidden ml-auto mr-3">
+      <button class="flex items-center px-2 py-1 border rounded text-gray-400 border-gray-500 hover:text-white hover:border-white self-end" onclick="toggleCollapsingNav()">
+        <svg class="fill-current h-5 w-5" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+          <title>Menu</title>
+          <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
+        </svg>
+      </button>
+    </div>
+    <div class="block hidden w-full md:flex md:items-center md:w-auto top-nav" id="navCollapsingMenu">
+      <ul class="text-sm md:flex-grow">
+        <li class="block mt-3 mb-2 md:inline-block md:mt-0 md:mb-0 ml-2 mr-4 menu-item">
+          <a href="/index.html#section-about" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            About
+          </a>
+        </li>
+        <li class="block mt-3 mb-2 md:inline-block md:mt-0 md:mb-0 ml-2 mr-4 menu-item">
+          <a href="/index.html#section-cfp" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            CFP
+          </a>
+        </li>
+        <!-- <li class="block mt-3 mb-2 md:inline-block md:mt-0 md:mb-0 ml-2 mr-4 menu-item">
+          <a href="#section-proceedings" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            Proceedings
+          </a>
+        </li> -->
+        <li class="block mt-3 mb-2 md:inline-block md:mt-0 md:mb-0 ml-2 mr-4 menu-item">
+          <a href="/index.html#section-org" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            Organizers
+          </a>
+        </li>
+        <li class="block mt-3 mb-2 md:inline-block md:mt-0 md:mb-0 ml-2 mr-4 menu-item">
+          <a href="/index.html#section-committee" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            Committee
+          </a>
+        </li>
+        <li class="block mt-3 mb-2 md:inline-block md:mt-0 md:mb-0 ml-2 mr-4 menu-item">
+          <a href="#" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            Programme
+          </a>
+        </li>
+        <li class="block mt-3 mb-2 md:inline-block md:mt-0 md:mb-0 ml-2 mr-4 menu-item">
+          <a href="/index.html#section-contact" class="text-gray-400 hover:text-white text-proxima-condensed text-lg">
+            Contact
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+  <!-- ******************** BODY *********************** -->
+  <section class="bg-white" id="section-about">
+    <div class="container mx-auto pt-20 text-franklin px-4">
+      <h2 class="text-franklin-cond text-4xl mb-12 text-center">Preliminary programme</h2>
+      
+      <p class="md:text-lg my-5">
+        Preliminary conference programme is available for download:
+      </p>
+      <div>
+        <a href="/data/dccn_preliminary_program.pdf" class="text-indigo-700">
+          <ion-icon name="download" size="large" class="align-middle"></ion-icon>
+          <span class="text-lg">dccn_preliminary_program.pdf</span>
+        </a>
+      </div>
+      <p class="md:text-lg border-solid border-4 border-purple-500 p-5 mt-10">
+        Please, note that the programme is subject to change, and will be updated after the review procedure.
+      </p>
+
+    </div>
+  </section>
+
+</body>
+<script src='script.js'></script>
+</html>
